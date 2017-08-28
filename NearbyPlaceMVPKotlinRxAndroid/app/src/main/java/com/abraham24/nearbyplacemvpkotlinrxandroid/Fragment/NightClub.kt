@@ -31,7 +31,7 @@ class NightClub : Fragment(), ModelNightClub {
         var view = inflater!!.inflate(R.layout.fragment_night_club, container, false)
 
         presenter_night_club = PresenterNightClub(this)
-        presenter_night_club?.getNightClub("-6.1925297,106.8001397", 1000, "night_club", "AIzaSyDN7RJFmImYAca96elyZlE5s_fhX-MMuhk")
+        presenter_night_club?.getNightClub("-6.1925297,106.8001397", 1000, "hospital", "AIzaSyDN7RJFmImYAca96elyZlE5s_fhX-MMuhk")
         return view
     }
 
