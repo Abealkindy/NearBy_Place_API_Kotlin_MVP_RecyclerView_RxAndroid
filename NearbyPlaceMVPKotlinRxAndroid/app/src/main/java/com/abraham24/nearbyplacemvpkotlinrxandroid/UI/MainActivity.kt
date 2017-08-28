@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        tab_layout.addTab(tab_layout.newTab().setText("Night Club"))
+        tab_layout.addTab(tab_layout.newTab().setText("Hospital"))
         tab_layout.addTab(tab_layout.newTab().setText("Laundry"))
         tab_layout.addTab(tab_layout.newTab().setText("Cafe"))
 
