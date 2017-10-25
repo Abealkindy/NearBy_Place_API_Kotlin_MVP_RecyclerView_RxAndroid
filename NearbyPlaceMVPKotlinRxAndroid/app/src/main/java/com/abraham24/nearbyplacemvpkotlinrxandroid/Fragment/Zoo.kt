@@ -27,7 +27,7 @@ class Zoo : Fragment(), ModelNightClub {
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-         var view = inflater!!.inflate(R.layout.fragment_barber, container, false)
+        var view = inflater!!.inflate(R.layout.fragment_barber, container, false)
 
         presenter_night_club = PresenterNightClub(this)
         presenter_night_club?.getZoo("-6.1925297,106.8001397", 1000, "cafe", "AIzaSyDN7RJFmImYAca96elyZlE5s_fhX-MMuhk")
@@ -36,6 +36,7 @@ class Zoo : Fragment(), ModelNightClub {
 
 
     }
+
     override fun success(data: List<Result>, status: String) {
         var adapter = CustomAdapterRecyclerView(activity, data)
         var linear = LinearLayoutManager(activity)

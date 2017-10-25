@@ -15,7 +15,7 @@ class TabAdapter(fm: FragmentManager?) : FragmentStatePagerAdapter(fm) {
     override fun getItem(position: Int): Fragment {
         if (position == 0) {
             return NightClub()
-        } else if (position == 1 ){
+        } else if (position == 1) {
             return Laundry()
         } else {
             return Zoo()

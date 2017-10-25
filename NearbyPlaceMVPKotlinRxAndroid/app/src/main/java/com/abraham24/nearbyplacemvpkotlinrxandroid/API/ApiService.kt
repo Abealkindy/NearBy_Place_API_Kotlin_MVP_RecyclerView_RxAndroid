@@ -13,9 +13,9 @@ interface ApiService {
 
     @GET("json")
     fun request_nearby(
-            @Query("location") location : String,
-            @Query("type") type : String,
-            @Query("radius") radius : Int,
-            @Query("key") key : String
-    ) : Observable<ResponseJSON>
+            @Query("location") location: String,
+            @Query("type") type: String,
+            @Query("radius") radius: Int,
+            @Query("key") key: String
+    ): Observable<ResponseJSON>
 }

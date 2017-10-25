@@ -33,6 +33,7 @@ class Laundry : Fragment(), ModelNightClub {
         return view
 
     }
+
     override fun success(data: List<Result>, status: String) {
         var adapter = CustomAdapterRecyclerView(activity, data)
         var linear = LinearLayoutManager(activity)

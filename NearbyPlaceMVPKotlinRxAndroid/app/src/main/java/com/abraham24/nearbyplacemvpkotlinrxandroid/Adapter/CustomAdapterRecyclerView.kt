@@ -33,18 +33,18 @@ class CustomAdapterRecyclerView : RecyclerView.Adapter<CustomAdapterRecyclerView
     override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
         holder?.textNama?.setText(data?.get(position)!!.name)
 
-       try {
-var photoreference = data?.get(position)!!.photos?.get(0)!!.photoReference
-var url = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=" + photoreference + "&key=AIzaSyDN7RJFmImYAca96elyZlE5s_fhX-MMuhk"
+        try {
+            var photoreference = data?.get(position)!!.photos?.get(0)!!.photoReference
+            var url = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=" + photoreference + "&key=AIzaSyDN7RJFmImYAca96elyZlE5s_fhX-MMuhk"
 
-Glide.with(c)
-.load(url)
-.into(holder?.gambar)
-} catch (e: Exception) {
-Glide.with(c)
-.load(data?.get(position)!!.icon)
-.into(holder?.gambar)
-}
+            Glide.with(c)
+                    .load(url)
+                    .into(holder?.gambar)
+        } catch (e: Exception) {
+            Glide.with(c)
+                    .load(data?.get(position)!!.icon)
+                    .into(holder?.gambar)
+        }
 
     }
 

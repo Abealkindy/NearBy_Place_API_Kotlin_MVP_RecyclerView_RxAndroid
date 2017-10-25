@@ -19,7 +19,7 @@ class PresenterNightClub {
         this.model = model
     }
 
-    fun getNightClub (location: String, radius: Int, type: String, key: String) {
+    fun getNightClub(location: String, radius: Int, type: String, key: String) {
         InitRetrofit()
                 .getInstant()
                 .request_nearby(location, type, radius, key)
@@ -61,7 +61,7 @@ class PresenterNightClub {
                 })
     }
 
-    fun getZoo (location: String, radius: Int, type: String, key: String) {
+    fun getZoo(location: String, radius: Int, type: String, key: String) {
         InitRetrofit()
                 .getInstant()
                 .request_nearby(location, type, radius, key)

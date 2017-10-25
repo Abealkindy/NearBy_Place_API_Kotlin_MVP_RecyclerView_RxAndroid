@@ -19,7 +19,7 @@ class InitRetrofit {
 
     }
 
-    fun getInstant () : ApiService {
+    fun getInstant(): ApiService {
         return getInit().create(ApiService::class.java)
     }
 }
